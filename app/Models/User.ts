@@ -5,6 +5,19 @@ export default class User extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
+  @column()
+  name: string
+    
+  @column()
+  email: string
+
+  @column()
+  password: string
+
+  @column()
+  cnpj: string
+
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

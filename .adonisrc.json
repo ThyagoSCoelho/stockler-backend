@@ -1,4 +1,5 @@
 {
+  "httpControllers": "App/Controllers",
   "typescript": true,
   "commands": [
     "./commands",
