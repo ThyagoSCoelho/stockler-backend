@@ -1,5 +1,4 @@
 import Route from '@ioc:Adonis/Core/Route'
-import UsersController from 'App/Controllers/Http/UsersController';
 
 Route.group(() => {
   Route.get('/', async () => {
@@ -8,5 +7,6 @@ Route.group(() => {
 
   // Rotas de Users
   Route.resource('/users', 'UsersController').apiOnly();
+  Route.resource('/product', 'ProductController').apiOnly();
 
 }).prefix('/api')
